@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Nuñez</title>
+    <link rel="shortcut icon" href="./logo/MN2.ico">
+    <link rel="stylesheet" href="project-3.css">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--End Boostrap-->
+
+</head>
+
+<body>
+    <section class="container-project">
+        <div align="center">
+            <iframe width="800" height="600" src="./img/project-3/Video-Core.mp4" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="title">
+            <h1>VC FrameBuffer en QEMU</h1>
+        </div>
+        <div class="info">
+            <h3>Resumen del proyecto </h3>
+            <p class="text">
+                Se solicito un programa en assembler ARMv8 que genere un patron determinado o una imagen diseñada por el
+                usuario. El codigo debia generar dicha imagen y como primer ejercicio se solicitaba lo siguiente. <br>
+                La imagen o patrón debia ser estático y debía cumplir con los siguientes requisitos: <br>
+                - Que el patrón dibujado utilizara toda la extensión de la pantalla. <br>
+                - No podia tratarse de un patrón aleatorio. <br>
+                - Se debía utilizar al menos 3 colores diferentes. <br>
+                - El patrón debía involucrar al menos dos figuras de distinta forma. <br>
+                - El patrón o imagen debía poder explicarse en dos líneas de texto. <br>
+                Como segundo ejercicio se debía escribir un programa en assembler ARMv8 que genere figuras definidas de
+                distintos colores
+                con movimiento, siendo posible reutilizar el código. <br>
+                Además se debía considerar que la secuencia de movimiento debía tener una duración no menor a 10
+                segundos. Los requisitos eran los mismos que el ejercicio anterior.
+            </p>
+            <h3>Trabajo de laboratorio</h3>
+            <p class="text">
+                Para la realización del presente trabajo, se adjuntaba un código ejemplo donde se realizan
+                todas las tareas de inicialización de VC. Este código inicializaba el
+                FrameBuffer con la siguiente configuración:<br><br>
+                - Tamaño en X = 640 píxeles.<br>
+                - Tamaño en Y = 480 píxeles.<br>
+                - Formato de color: ARGB de 32 bits.<br><br>
+                El formato de colores se denomina ARGB, donde A es el alpha (transparencia), R es Red
+                (rojo), G es Green (verde) y B es Blue (azul), el orden de las siglas determinaba el orden en que
+                se ubican estos bits dentro de los 32 bits.<br><br>
+                Para cada uno de los componentes, el estándar
+                ARGB le otorga 8 bits de resolución. El color del píxel sería el resultado de
+                la combinación aditiva de los tres colores (rojo, verde y
+                azul).<br><br>
+                Dado que la modalidad de cursado era virtual debido a la pandemia, resultaba imposible utilizar las
+                placas raspberry pi, a razón de esto se implementó el programa QEMU, que ya había sido
+                utilizado en la materia, y que otorgaba la capacidad de emular perfectamente el hardware. De tal
+                forma en que el código generado para utilizar el framebuffer de la raspberry pi 3 podía
+                correrse exactamente igual en dicho emulador.<br><br>
+                La decisión de la elección de la imagen a trabajar fue con base en un gusto personal y patrones de
+                colores que conforman dicha imagen.<br> <br>
+                Y con los datos otorgados en los archivos de referencia se necesitó tener
+                en cuenta el manual de referencia de ARMv8 para el trabajo.
+
+            </p>
+            <h3>Herramientas utilizadas</h3>
+            <ul class="list-skills">
+                <li class="skills-project"><img src="./img/project-3/arm.png" alt="ARMv8 ">ARMv8</li>
+                <li class="skills-project"><img src="./img/project-3/Ubuntu_MATE_logo.png" alt="Ubuntu-Mate">Linux
+                    Ubuntu</li>
+                <li class="skills-project"><img src="./img/project-3/Qemu_logo.png" alt="QEMU">QEMU</li>
+            </ul>
+            <div class="repo">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <span class="footer-title">Marina Nuñez</span>
+        <p>Copyright &copy 2022</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
