@@ -417,6 +417,9 @@ body{
     header .sticky{
         padding: 10px 20px;
     }
+    header .brand{
+        font-size: 1em;
+    }
     
     header .navigation{
         display: none;
@@ -478,6 +481,9 @@ body{
     .main .content h2{
         font-size: 1em;
     }
+    .media-icons{
+        margin-left:5px;
+    }
     .animated-text h3{
         font-size: 1em;
     }
@@ -490,6 +496,7 @@ body{
 
     .about-me .profile{
         width: 100%;
+        height: 500px;
     }
 
     .about-me .text{
