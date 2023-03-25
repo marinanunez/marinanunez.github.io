@@ -101,3 +101,23 @@ body{
     margin-top: 10px;
     background: #000016;
 }
+
+@media (max-width: 1040px){
+    .container-project .carousel-item.active {
+        display: contents;
+    }
+    .container-project .title h1 {
+        font-size: 2em;
+    }
+    .container-project .info h3 {
+        font-size: 1.2em;
+    }
+    .container-project .info .text {
+        font-size: 1em;
+        text-align: initial;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+}
